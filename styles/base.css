@@ -8,19 +8,17 @@ body {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	/* background-color: #800000; */
-	background-color: #855144;
-	
+	background-color: #855144;	
 }
 
 
 /* mobile **************************/
 header {
-	/* background-color: #bbb; */
+	display: block;
 	background-color: #855144;
-	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 20px;
+	padding: 20px  0 0;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -35,6 +33,11 @@ h1 {
 	font-size: 1.5rem;
 	font-weight: 400;
 	color: #F9F8F5;
+}
+
+header h1 {
+	text-align: center;
+	padding-bottom: 20px;
 }
 
 h2 {
@@ -93,6 +96,13 @@ nav a:hover {
 	}
 }
 
+@media (min-width: 640px) {
+	header{
+		display: block;
+	
+	}
+	
+}
 main {
     display: grid;
 	grid-template-columns: 2fr 1fr;
