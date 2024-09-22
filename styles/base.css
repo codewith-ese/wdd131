@@ -99,9 +99,7 @@ nav a:hover {
 @media (min-width: 640px) {
 	header{
 		display: block;
-	
-	}
-	
+	}	
 }
 main {
     display: grid;
@@ -112,6 +110,23 @@ main {
 	padding: 2px 10px;
   }
 
+/*  adding media qur    */
+@media (max-width: 760px) {
+    main {
+        display: block;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        padding: 5px;
+        margin: auto;
+        align-items: center;
+    }
+	h1 {
+		font-size: 1rem;
+		font-weight: 400;
+		color: #F9F8F5;
+	}
+}
 section {
 	margin: 0 10px;
 	background-color: #F9F8F5;
@@ -127,9 +142,7 @@ section h2 {
 	padding: 0;
 	border: 1px solid black;
 	border-radius: 10px;
-	height: 550px;
-	
-	
+	height: 550px;	
 }
 .card p {
 	padding: 10px 20px;
@@ -154,6 +167,16 @@ section h2 {
 	align-self: center;
 }
 
+/*  adding media qur    */
+@media (max-width: 760px) {
+	.card {
+		margin: 15px auto;
+		padding: 0;
+		border: 1px solid black;
+		border-radius: 10px;
+		height: auto;	
+	}
+}
 
 .box img{
 	max-width: 400px;
@@ -207,7 +230,6 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 	background-color: #14485f;
-	/* max-width: 1200px; */
 	padding: 10px 0;
 	
 }
