@@ -1,0 +1,36 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial;
+    font-weight: 400;
+    color: #1b1919;
+    /* overflow-y: hidden; */
+}
+
+header, main, footer {
+    font-family: Roboto, Arial;
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #ccc; /* light gray border */
+    background-color: rgb(142, 170, 216);
+    padding: 1rem;
+      
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+
+}
+
+section {
+    background-color: #f9f8f5;
+    padding: 1rem;
+}

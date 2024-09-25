@@ -108,7 +108,7 @@ main {
 	margin: 0 auto;
 	column-gap: 20px;
 	padding: 2px 10px;
-  }
+}
 
 /*  adding media qur    */
 @media (max-width: 760px) {
@@ -220,7 +220,7 @@ footer p {
 }
 
 .highlight {
-	color: #FBC404;;
+	color: #FBC404;
 	font-weight: 400;
 	font-family: hebrew;
 }
