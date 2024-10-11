@@ -12,11 +12,11 @@ body {
 	background-color: #F9F8F5;
 }
 
-
 .hero img {
     width: 100%;
     height: auto;
-  }
+}
+
 
 /* mobile **************************/
 header {
@@ -33,7 +33,6 @@ main {
 	margin: 0 auto;
 }
 
-
 header h1 {
 	font-size: 2.5rem;
 	color: #FFF;
@@ -45,12 +44,7 @@ h2 {
 	font-size: 1.4rem;
 	text-align: center;
 	padding: 1rem;
-	margin-bottom: 2rem;
-	/* color: green; */
-
 }
-
-
 
 .container-class {
 	display: grid;
@@ -73,18 +67,22 @@ section p {
 	font-size: medium;
 	padding: .2rem;	
 	margin-bottom: 5px;
+	font-size: 1.2rem;
 }
 
 .weather-header {
 	padding: 5px;
-	display: block;
 }
 
+.weather-header img {
+	width: 70px;
+	height: auto;
+	margin: auto;
+}
 .weather-icon {
 	font-size: 24px;
 	text-align: center;
 	margin: auto;
-	/* align-items: center; */
 }
 
 
@@ -96,13 +94,11 @@ footer {
 	background-color: #023802;
 	padding: 10px 0;
 	position: relative;
-
 }
 
 footer p {
 	margin: 0.25rem;
 	padding: 0.1rem 0.75rem;
-	/* background-color: #074907; */
 	background-color: #023802;
 	letter-spacing: .05rem;
 	line-height: 1.2rem;

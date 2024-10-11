@@ -1,11 +1,9 @@
 
 /* Larger Views ******************************/
-
-/* large view navigation ************************************/
 @media screen and (max-width: 949px) {
 	h2 {
 		font-size: 1.7rem;
-        text-align: left;
+        text-align: center;
         color: #fff;
 	}
 	.container-class {
@@ -30,9 +28,7 @@
         padding: 5px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        margin-bottom: 1rem;
     }
     .weather-header {
         background-color: green;
@@ -40,20 +36,11 @@
         padding: 5px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
         align-items: center;
+        margin-bottom: 1rem;
     }
 
-
-    .weather-icon {
-        font-size: 24px;
-      }
-      
-    .weather-icon img{
-        width: 24px;
-    }
-    
 }
 
 @media screen and (min-width: 950px)  {
@@ -62,16 +49,13 @@
     footer {
         margin: 0 auto;
     }
-	/* h1 {
-		margin-left: 0;
-		text-align: center;
-        color: #fff;
-	} */
+
 
 	h2 {
 		font-size: 1.7rem;
         text-align: left;
         color: #fff;
+        
 	}
     .container-class {
         display: grid;
@@ -79,9 +63,6 @@
         grid-template-rows: auto;
         grid-gap: 10rem;
         position: absolute; top: 140px; left: 20px;
-        
-       
-
     }
 
     section {
@@ -99,30 +80,38 @@
         padding: 5px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        margin-bottom: 1rem;
     }
     .weather-header {
         background-color: green;
         color: white;
-        padding: 5px;
+        padding-right: 5px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 1rem;
     }
-
-
-    .weather-icon {
-        font-size: 24px;
-      }
-      
-    .weather-icon img{
-        width: 24px;
+    .sel::selection {
+        background-color: #000;
+        color: yellow;
     }
     
+    .firstline::first-line {
+        color: tomato;
+    }
+    .firstletter::first-letter {
+        color: navy;
+        font-size: 2rem;
+    }
+
+    .before::before {
+        content: "🎈 ";
+    }
+    .after::after {
+        content: " 🌮";
+    }
       
 }
 
