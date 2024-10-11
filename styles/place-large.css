@@ -8,7 +8,7 @@
 	}
 	.container-class {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, max-width(300px, 1fr));
+		grid-template-columns: repeat(auto-fit, min-width(300px, 1fr));
 		grid-template-rows: auto;
 		grid-gap: 1rem;
 
