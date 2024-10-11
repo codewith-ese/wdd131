@@ -1,0 +1,130 @@
+
+/* Larger Views ******************************/
+
+/* large view navigation ************************************/
+@media screen and (max-width: 949px) {
+	h2 {
+		font-size: 1.7rem;
+        text-align: left;
+        color: #fff;
+	}
+	.container-class {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, max-width(300px, 1fr));
+		grid-template-rows: auto;
+		grid-gap: 1rem;
+
+       
+	}
+    section {
+        margin: 1rem ;
+        padding: 1rem;
+        width: 340px;
+        border: 2px solid white;
+        margin: auto;
+        
+    }
+    
+    .data-header {
+        background-color: green;
+        padding: 5px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .weather-header {
+        background-color: green;
+        color: #fff;
+        padding: 5px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .weather-icon {
+        font-size: 24px;
+      }
+      
+    .weather-icon img{
+        width: 24px;
+    }
+    
+}
+
+@media screen and (min-width: 950px)  {
+    header,
+    main,
+    footer {
+        margin: 0 auto;
+    }
+	/* h1 {
+		margin-left: 0;
+		text-align: center;
+        color: #fff;
+	} */
+
+	h2 {
+		font-size: 1.7rem;
+        text-align: left;
+        color: #fff;
+	}
+    .container-class {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-gap: 10rem;
+        position: absolute; top: 140px; left: 20px;
+        
+       
+
+    }
+
+    section {
+        margin: 1rem ;
+        padding: 1rem;
+        max-width: 300px;
+        border: 2px solid #fff;
+        background-color: #fff;
+    }
+
+
+    .data-header {
+        background-color: green;
+        color: #fff;
+        padding: 5px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .weather-header {
+        background-color: green;
+        color: white;
+        padding: 5px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .weather-icon {
+        font-size: 24px;
+      }
+      
+    .weather-icon img{
+        width: 24px;
+    }
+    
+      
+}
+
+
+
