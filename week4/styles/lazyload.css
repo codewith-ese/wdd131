@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    background-color: #000;
+    animation: fade 5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+footer {
+	margin-top: 15px;
+	border-top: 8px solid #d2d737ef;
+	box-shadow: 0 0 30px #333;
+	text-align: center;
+	background-color: #023802;
+	padding: 10px 0;
+	position: relative;
+}
+
+footer p {
+	margin: 0.25rem;
+	padding: 0.1rem 0.75rem;
+	background-color: #023802;
+	letter-spacing: .05rem;
+	line-height: 1.2rem;
+	font-size: small;
+	color: #f9f8f5;
+}
