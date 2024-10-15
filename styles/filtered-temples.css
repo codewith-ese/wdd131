@@ -262,7 +262,7 @@ footer p {
 }
 
 .card {
-	display: inline-block;
+	/* display: inline-block; */
 	margin: 10px;
 	padding: 10px;
 	border: 1px solid #ddd;
@@ -272,7 +272,7 @@ footer p {
 
   .card img {
 	width: 100%;
-	height: 150px;
+	height: auto;
 	object-fit: cover;
 	border-radius: 10px 10px 0 0;
   }

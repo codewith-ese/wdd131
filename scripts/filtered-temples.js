@@ -83,8 +83,39 @@ const temples = [
 	  imageUrl:
 	  "https://churchofjesuschristtemples.org/assets/img/temples/dallas-texas-temple/dallas-texas-temple-1809-icon.jpg"
 	},
+	{
+	  templeName: "Manila Philippines Temple",
+	  location: "Greenmeadows Subdivision UGONG NORTE",
+	  dedicated: "1984, September, 25-27",
+	  area: 26683,
+	  imageUrl:
+	  "https://churchofjesuschristtemples.org/assets/img/temples/manila-philippines-temple/manila-philippines-temple-44346.jpg"
+	},
+	{
+	  templeName: "Grand Junction Colorado Temple",
+	  location: "Colorado, United State",
+	  dedicated: "2022, April 16",
+	  area: 25000,
+	  imageUrl:
+	  "https://churchofjesuschristtemples.org/assets/img/temples/grand-junction-colorado-temple/grand-junction-colorado-temple-53957.jpg"
+	},
+	{
+	  templeName: "Nauvoo Illinois Temple",
+	  location: "Nauvoo, Illinois, United State",
+	  dedicated: "2022, June 27-30",
+	  area: 54000,
+	  imageUrl:
+	  "https://churchofjesuschristtemples.org/assets/img/temples/nauvoo-illinois-temple/nauvoo-illinois-temple-42923.jpg"
+	},
+	{
+	  templeName: "Billings Montana Temple",
+	  location: "Billings, Montana, United State",
+	  dedicated: "1999, November, 20-21",
+	  area: 54000,
+	  imageUrl:
+	  "https://churchofjesuschristtemples.org/assets/img/temples/billings-montana-temple/billings-montana-temple-31624.jpg"
+	},
 	// Add more temple objects here...
-
   ];
 
 
@@ -99,7 +130,7 @@ const temples = [
   
 	const imageElement = document.createElement('img');
 	imageElement.src = imageUrl.imageUrl;
-	imageElement.alt = imageUrl.title;
+	imageElement.alt = imageUrl.templeName;
 	imageElement.loading = "lazy";
   
 	const titleElement = document.createElement('h2');
