@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Explore the beauty of temples around the world with our interactive gallery, featuring stunning images and information about each temple. Learn about the history, architecture, and significance of these sacred places, and get inspired by the diversity and richness of temple culture">
+    <meta name="author" content="Monday Erirore Eseinone">
+    <title>WDD 131 - Monday Erirore Eseinone - Product Review Form in Dynamic Web Fundamentals </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css"> 
+</head>
+<body>
+    <!-- HEADER STARTS HERE -->
+    <header>
+        <h1> FORM1 </h1>
+        <button type="button" id="menu"></button>
+        <!-- NAVIGATION STARTS HERE -->
+        <nav class="navigation">
+            <a href="form.html" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Product</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+        </nav>
+    </header>
+  
+    <!-- MAIN CONTENT STARTS HERE -->
+    <main>
+        <div class="container">  
+            <h2>Product Review</h2>
+            <form action="review.html" method="get" class="wf1">
+                <fieldset>
+                    <!-- <legend>Product Name</legend> -->
+                    <label>Product Name 
+                        <select name="subject">
+                            <option value="">Choose a Product.............. &#9662;</option>
+                            <option value="software">Software Development</option>
+                            <option value="creative">Creative Professional</option>
+                            <option value="info">Information Technology</option>
+                            <option value="data">Data Professional</option>
+                            <option value="construction">Construction</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="business">Business Professional</option>
+                            <option value="security">Cyber Security</option>
+                        </select>
+                    </label>
+
+                    <div>Overall Rating</div>
+                    <div class="rating">
+                        <label for="1">★</label>
+                        <input type="radio" name="rating" id="1" value="1" />
+                        <label for="2">★★</label>
+                        <input type="radio" name="rating" id="2" value="2" />
+                        <label for="3">★★★</label>
+                        <input type="radio" name="rating" id="3" value="3" />
+                        <label for="4">★★★★</label>
+                        <input type="radio" name="rating" id="4" value="4" />
+                        <label for="5">★★★★★</label>
+                        <input type="radio" name="rating" id="5" value="5" />
+                      </div>
+
+        
+                </fieldset>
+                <fieldset>
+                    <label>Date of Installation <input type="date" name="completedDate"></label>
+                </fieldset>
+               
+                    <!-- <legend>Applicant Information</legend>
+                    <label>First Name* <input type="text" name="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" required></label>
+                    <label>phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label>Website <input type="url" name="url" placeholder="http://"></label> -->
+             
+                <fieldset>
+                    <legend>Which features did you find useful in the product? </legend>
+        
+                    <div>(Check all that apply)</div>
+                    <label><input type="checkbox" name="editing" value="yes">Durability</label>
+                    <label><input type="checkbox" name="code" value="yes">Ease of Use</label>
+                    <label><input type="checkbox" name="process" value="yes">Performance</label>
+                    <label><input type="checkbox" name="client" value="yes">Design</label>
+        
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Written Review(Optional)</legend>
+                    <label> <textarea name="message" id="a" rows="6" cols="45"></textarea></label>
+                    <label>Your Name(optional) <input type="text" name="fname" required></label>
+                    <!-- <label>How Many Authors <input type="number" name="authors"></label> -->
+                </fieldset>
+        
+                <input type="submit" value="Propose My Course">
+            </form>
+        </div>           
+    </main>
+    <!-- FOOTER HERE -->
+    <footer>
+        <p id="year"></p> 
+        <p id="date-modified"></p>
+    </footer>   
+    <script src="js/scripts.js"></script>
+    </body>
+</html>
