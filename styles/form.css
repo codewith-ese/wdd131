@@ -278,7 +278,7 @@ section {
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
-	background-color: #ddd;
+	background-color: #14891e;
 	cursor: pointer;
 	transition: background-color 0.3s;
 	font-size: 12px;
@@ -295,6 +295,12 @@ section {
 
 /* rating ends here  */
 
+/* FORM ID STARTS HER  */
+#submissionCount {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
 
 /* *------------ FOOTER STARTS HERE -------------* */
 footer {
