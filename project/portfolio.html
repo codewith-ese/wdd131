@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Personal Profile Website project of Monday Eseinone WDD 131 - Dynamic Web Fundamentals project, featuring HTML, CSS, and JavaScript, by Monday Erirore Eseinone, an online student at Brigham Young University. Project completed on September 19th, 2024.">
+    <meta name="author" content="Monday Erirore Eseinone">
+    <title> Monday Erirore Eseinone</title>
+
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/profile-scripts.js" defer></script>
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/profile-large.css">
+</head>
+<body>
+    <header>
+        <h1>Eseinone Code Hub</h1> 
+        <!-- <h2> Call Today <i>+234-807-523-6542</i></h2> -->
+        <button type="button" id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!-- portfolio starts here  -->
+        <div id="portfolio">
+            <div class="portfolio-content">
+                <div class="row-portfolio">
+                    <h3>Portfolio</h3>
+                </div>
+                <div class="row-portfolio">
+                    <p>Explore some of my latest projects below. Each project showcases 
+                        my approach to design, coding, and problem-solving. 
+                        These include a range of web applications and 
+                        tools that I’ve developed from the ground up, 
+                        all focused on functionality, accessibility, 
+                        and performance.</p>
+                </div>
+            </div>
+        </div>   <!-- portfolio end here  -->
+ 
+        <div class="skill-class">
+                <figure>
+                    <img class="hover" src="images/furniture.jpeg"  alt="aba nigeria temple">
+                    <figcaption>  Factory Assistant App  </figcaption>
+                    <p> My special web app that calculate measurements and generate a cutting list for 
+                        any furniture project that invoves plywood or MDF Boards. <a href="https://eseflowtech.pythonanywhere.com/user_design">Link </a></p>
+                </figure>
+                <figure>
+                    <img class="hover" src="images/furniture.jpeg"  alt="Billings-Montana-Temple ">
+                    <figcaption>Furniture Material Calculator (Mobile & Web) </figcaption>
+                    <p>A tool designed to assist furniture manufacturers in
+                            calculating material requirements for production. <a href="https://codewith-ese.github.io/marble-form-calculator/index.html">Link</a></p>
+                </figure>
+                <figure>
+                    <img class="hover" src="images/furniture.jpeg"  alt="concepcion-chile-temple">
+                    <figcaption>Ese Flow Tech Blog </figcaption>
+                    <p> A responsive, engaging blog built with a focus on readability and user interaction.</p>
+                </figure>
+
+        </div>
+
+            <div id="get-touch">
+                <div class="get-touch-content">
+                    <div class="row">
+                        <h3>Cost for your home renovation project</h3>
+                        <p>Get started today and complete our form to request your free estimate</p>
+                    </div>
+                    <div class="row">
+                        <div class="button"><a href="#contact" class="button-exp"> Contact Us &#8594;</a></div>
+                    </div>
+                </div>
+            </div>
+        
+
+    </main>
+    <footer>
+        <p id="year"></p> 
+        <p id="date-modified"></p>
+    </footer>
+    
+</body>
+</html>

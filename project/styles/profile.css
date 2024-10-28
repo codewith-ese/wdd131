@@ -70,43 +70,42 @@ h2 {
     height: auto;
 }
 
-p.hero {
-	margin: 12px 0 0;
-	line-height: 24px;
+.welcome-class {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-gap: 1rem;
+	position: absolute;
+	top: 100px;
+	padding: 10px;
 }
 
-.hero .overlay {
-	background: rgba(0,0,0,0.3);
-}
-.hero h1 {
+.welcome-class h1 {
 	font-family: 'Montserrat', sans-serif;
 	color: #fff;
-	font-size: 62px;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 10px;
-	text-shadow: 0 0 15px rgba(0,0,0,0.5);
-	position: absolute;
-	top: 340px;
-	left: 350px;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 2rem;
 	margin: auto;
-
+	text-shadow: 0 0 15px #00000080;
+	background: #00000073;
+	text-align: left;
+	padding: .2rem 1rem;
 }
-.hero p {
+
+.welcome-class p {
 	color: #fff;
-	font-size: 17px;
-	line-height: 28px;
-	padding: 15px;
+	font-size: var(--fontSizeSm);
+	line-height: 1.4rem;
+	padding: 1rem;
 	max-width: 600px;
-	margin: 0 auto;
-	margin-bottom: 40px;
-	background: rgba(0,0,0,.45);
-	position: absolute;
-	top: 500px;
-	left: 350px;
-	margin: auto;
+	margin: .3rem auto;
+	background: #00000073;
 
 }
+
+
+
 
 header,
 main {
@@ -265,6 +264,46 @@ main {
 	color: wheat;
 
 }
+/* PORTFOLIO STYLE START HERE  */
+#portfolio {
+	padding: 0%;
+}
+
+.portfolio-content {
+	background-color: #1f386e;
+	color: #fff;
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-gap: 15px;
+	place-items: center;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.row-portfolio {
+	margin: auto;
+}
+
+
+.portfolio-content h2 {
+	margin-top: 0;
+	font-size: var(--gutterLg);
+	text-align: center;
+}
+.portfolio-content .row h3 {
+	margin: .1rem 0;
+	font-size: var(--fontSizeMd);
+	text-align: center;
+}
+
+.portfolio-content p {
+	margin-top: 0;
+	font-size: var(--gutterMd);
+	padding: auto;
+	color: wheat;
+
+}
 
 
 .container {
@@ -295,17 +334,15 @@ main {
 
 
 .container .about-details {
-	margin: 10px;
-	padding: 5px;
-	/* border: 1px solid #ddd; */
-	/* border-radius: 4px; */
-	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+	margin: 1rem;
+	padding: .5rem;
+
 }
 .about-details img {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
-	/* border-radius: 10px 10px 0 0; */
+
 }
 
 .about-details h2 {
@@ -363,25 +400,29 @@ ul li{
     padding: 0;
     font-size: 20px;
     text-align: center;
+	margin: auto;
 }
 
 
 .skill-class img {
     width: 100%;
     height: auto;
-    margin: 1rem auto 0;
+    margin: 1rem auto;
     padding: 30px;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
+
 }
 
 /* HOVER EFECT */
+
 .hover:hover {
 	box-shadow: 0 0 50px #333;
 	border-radius: 10px 0 0 0;
 	border: 5px solid #FFF;
+
 }
 
 figure {
