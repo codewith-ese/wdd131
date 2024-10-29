@@ -1,0 +1,91 @@
+/* Base styles */
+html {
+    font-size: 16px; /* Base font size */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Responsive Hero Section */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-class {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to 1 column */
+    grid-gap: 1rem;
+    position: absolute;
+    top: 20%; /* Adjust based on design */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    max-width: 90%; /* Responsive padding */
+    text-align: center;
+}
+
+/* Responsive Images */
+.welcome-class img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+}
+
+/* Responsive Typography */
+.welcome-class h1 {
+    font-size: 2.5rem; /* Use rem for responsiveness */
+}
+
+.welcome-class p {
+    font-size: 1rem; /* Use rem for responsiveness */
+}
+
+/* Media Queries */
+@media (min-width: 500px) {
+    .welcome-class {
+        grid-template-columns: 60% 40%; /* 2 columns */
+        top: 25%; /* Adjust top position */
+    }
+}
+
+@media (min-width: 1000px) {
+    .welcome-class {
+        grid-template-columns: 50% 50%; /* Adjust for larger screens */
+        top: 30%; /* Adjust top position */
+    }
+}
+
+/* General Responsive Styles */
+nav {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+}
+
+nav a {
+    padding: 1rem; /* Add padding for touch targets */
+    width: 100%; /* Full width for links */
+}
+
+/* Adjustments for Skill Class */
+.skill-class {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    grid-gap: 15px;
+}
+
+/* Adjustments for Form Grid */
+.form-grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to 1 column */
+    grid-gap: 10px;
+}
+
+@media (min-width: 600px) {
+    .form-grid-container {
+        grid-template-columns: 2fr 1fr; /* 2 columns for larger screens */
+    }
+}

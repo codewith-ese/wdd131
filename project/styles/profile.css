@@ -64,82 +64,57 @@ h2 {
 	font-size: 1.4rem;
 }
 
+.hero {
+    position: relative;
+    overflow: hidden;
+}
 
 .hero img {
     width: 100%;
     height: auto;
 }
 
+
+/* Responsive Hero Section */
 .welcome-class {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
-	grid-gap: 1rem;
-	margin: 30px;
-	position: absolute;
-	top: 60px;
-	padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr; /* Default to 1 column */
+    grid-gap: 1px;
+    position: absolute;
+    top: 10%; /* Adjust based on design */
+    left: 40%;
+    transform: translateX(-50%);
+    padding: .1rem;
+    max-width: 80%; /* Responsive padding */
+    text-align: center;
 	background: #00000073;
 	box-shadow: 1px 20px 20px 30px rgba(2, 2, 1, 0.591);
 }
-.welcome-class img {
-	max-width: 150px;
 
+/* Responsive Images */
+.welcome-class img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+	padding: .1rem;
 }
 
+/* Responsive Typography */
 .welcome-class h1 {
-	font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem; /* Use rem for responsiveness */
 	color: #fff;
-	font-size: 30px;
-	font-weight: 400;
-	line-height: 2rem;
-	margin: auto;
-	text-shadow: 0 0 15px #00000080;
+	line-height: 1.6rem;
 	text-align: left;
-	padding: .2rem 1rem;
+	padding: .1rem .5rem;
 }
 
 .welcome-class p {
+    font-size: 1rem; /* Use rem for responsiveness */
 	color: #fff;
 	font-size: var(--fontSizeSm);
-	line-height: 1.4rem;
-	padding: 1rem;
-	max-width: 600px;
-	margin: .3rem auto;
-	/* background: #00000073; */
-
+	line-height: 1.3rem;
+	padding: .3rem .5rem;
+	text-align: left;
 }
-
-@media (max-width: 540px) {
-	.welcome-class img {
-		display: none;
-	}
-	
-	.welcome-class {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: auto;
-		grid-gap: .1rem;
-		margin: 30px;
-		position: absolute;
-		top: 80px;
-		padding: 1px;
-		background: #00000073;
-		box-shadow: 1px 20px 20px 30px rgba(2, 2, 1, 0.591);
-	}
-	.welcome-class h1 {
-		font-size: 30px;
-		line-height: normal;
-	}
-	.welcome-class p {
-		margin: 0px;
-		padding: 1.rem 1rem;
-	}
-	
-}
-
-
-
 
 header,
 main {
@@ -254,53 +229,112 @@ nav a:hover {
 
 
 main {
-    /* max-width: 1000px; */
     align-items: center;
-    /* background-color: #185337c2; */
     background-color: #fff;
     padding: 0px;
     color: #1f386e; 
     margin: auto;
 }
 
-#get-touch {
+#connect-us {
 	padding: 0%;
 }
 
-.get-touch-content {
+.connect-us-content {
 	background-color: #1f386e;
 	color: #fff;
 	display:grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
-	grid-gap: 15px;
-	place-items: center;
-    padding: 0 1rem;
-    text-align: center;
+	grid-gap: 2px;
+    padding: 1rem 1rem;
+	margin-top: -.7rem;
+	border-top: 4px solid #c1a728;
+	border-bottom: 4px solid #c1a728;
+
 }
 
 .row {
 	margin: auto;
 }
 
-.get-touch-content h2 {
-	margin-top: 0;
+.connect-us-content h2 {
+	margin-top: .1rem;
 	font-size: var(--gutterLg);
 	text-align: center;
 }
-.get-touch-content .row h3 {
-	margin: .1rem 0;
+.connect-us-content h3 {
+	margin: .2rem .5rem;
 	font-size: var(--fontSizeMd);
-	text-align: center;
+	text-align: left;
+	line-height: 1.4rem;
 }
 
-.get-touch-content p {
-	margin-top: 0;
+.connect-us-content p {
+	margin: 0 .5rem;
 	font-size: var(--gutterMd);
 	padding: auto;
 	color: wheat;
+	line-height: 1.2rem;
 
 }
+
+/* SKILL STYLE STARTS HERE  */
+
+#skl {
+	padding: 0%;
+}
+
+.skl-content {
+	background-color: #1f386e;
+	color: #fff;
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-gap: 2px;
+    padding: 1rem 0;
+	margin-top: .7rem;
+	border-top: 4px solid #c1a728;
+	border-bottom: 4px solid #c1a728;
+
+}
+
+.skl-row {
+	margin: auto;
+}
+
+    
+.skl-row, ul li {
+	display: block;
+	/* background-color: #222; */
+	color: #f8f8f8;
+	padding: .2rem 2rem;
+	margin: .1rem auto;
+	font-size: var(--gutterMd);
+	line-height: 1.2rem;
+}
+
+.skl-content h2 {
+	margin-top: .1rem;
+	font-size: var(--gutterLg);
+	text-align: center;
+}
+.skl-content h3 {
+	margin: .1rem .1rem;
+	font-size: var(--fontSizeLg);
+	text-align: left;
+	padding: .1rem .4rem;
+}
+
+.skl-content p {
+	margin: .1rem .1rem;
+	font-size: var(--gutterMd);
+	padding: .4rem;
+	color: wheat;
+
+}
+/* SKILL STYLE ENDS HERE  */
+
 /* PORTFOLIO STYLE START HERE  */
 #portfolio {
 	padding: 0%;
@@ -412,18 +446,24 @@ section {
     padding:.5ren 5rem;
 }
 
-/* 
-ul li{
-    display: block;
-    background-color: #072719e2;
-    border: 2px solid wheat;
-    color: wheat;
-    padding: 0;
-    margin: auto;
-} */
+
 
 
 /* SKILL CLASS STARTS HERE  */
+/* Adjustments for Skill Class */
+.skill-class {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    grid-gap: 15px;
+}
+
+/* Adjustments for Form Grid */
+/* .form-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+} */
+
 .skill-class {
     display:grid;
     grid-template-columns: 1fr;
@@ -432,17 +472,17 @@ ul li{
     padding: .1rem;
 }
 
-.skill-class-item {
+/* .skill-class-item {
     border: 1px solid black;
     padding: 0;
     font-size: 20px;
     text-align: center;
 	margin: auto;
-}
+} */
 
 
 .skill-class img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 1rem auto;
     padding: 30px;
@@ -573,7 +613,7 @@ footer p {
 
 
 .button {
-	background-color: #1f386e;
+	/* background-color: #1f386e; */
 	font-size: var(--gutterSm);
 }
 
@@ -599,6 +639,34 @@ footer p {
 	color: #1f386e;
 	box-shadow: 2px 5px 6px 1px black;
 }
+
+/* READ MORE CONTENT STYLE STARTS HERE  */
+.more-content {
+    display: none; /* Initially hide the additional content */
+    margin-top: .1rem;
+}
+
+.read-more {
+    background-color: #a73310; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: .2rem .3rem;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+	display: block;
+	justify-content: center;
+}
+
+.read-more:hover {
+    background-color: #e0f127; /* Darker shade on hover */
+	color: black;
+}
+/* 
+#readMoreBtn {
+	margin: auto;
+} */
 
 
 
