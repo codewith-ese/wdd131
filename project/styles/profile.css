@@ -79,6 +79,10 @@ h2 {
 	top: 100px;
 	padding: 10px;
 }
+.welcome-class img {
+	max-width: 200px;
+
+}
 
 .welcome-class h1 {
 	font-family: 'Montserrat', sans-serif;
@@ -88,7 +92,7 @@ h2 {
 	line-height: 2rem;
 	margin: auto;
 	text-shadow: 0 0 15px #00000080;
-	background: #00000073;
+	/* background: #00000073; */
 	text-align: left;
 	padding: .2rem 1rem;
 }
@@ -100,7 +104,7 @@ h2 {
 	padding: 1rem;
 	max-width: 600px;
 	margin: .3rem auto;
-	background: #00000073;
+	/* background: #00000073; */
 
 }
 
@@ -188,14 +192,16 @@ nav a:hover {
 	background-color: #e3e8e6e2;
 	color: #1f386e;
 	max-width: 900px;
+	z-index: 2000;
 }
 
 .navigation a {
 	display: none;
-	padding: .5rem;
+	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
 	color: #1f386e;
+	z-index: 1000;
 }
 
 .navigation a:hover {
@@ -203,6 +209,7 @@ nav a:hover {
 	color: #ce2a36;
 	font-weight: 400;
 	font-size: large;
+	z-index: 2000;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
