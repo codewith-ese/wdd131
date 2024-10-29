@@ -95,7 +95,6 @@ h2 {
 	line-height: 2rem;
 	margin: auto;
 	text-shadow: 0 0 15px #00000080;
-	/* background: #00000073; */
 	text-align: left;
 	padding: .2rem 1rem;
 }
@@ -109,6 +108,34 @@ h2 {
 	margin: .3rem auto;
 	/* background: #00000073; */
 
+}
+
+@media (max-width: 540px) {
+	.welcome-class img {
+		display: none;
+	}
+	
+	.welcome-class {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-gap: .1rem;
+		margin: 30px;
+		position: absolute;
+		top: 80px;
+		padding: 1px;
+		background: #00000073;
+		box-shadow: 1px 20px 20px 30px rgba(2, 2, 1, 0.591);
+	}
+	.welcome-class h1 {
+		font-size: 30px;
+		line-height: normal;
+	}
+	.welcome-class p {
+		margin: 0px;
+		padding: 1.rem 1rem;
+	}
+	
 }
 
 
