@@ -49,7 +49,10 @@
 
 
 body {
-  
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	color: #1b1919;
+	background-color: #F9F8F5;
     margin: 0 auto;
 }
 
@@ -67,6 +70,8 @@ h2 {
 .hero {
     position: relative;
     overflow: hidden;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
 }
 
 .hero img {
@@ -135,6 +140,7 @@ header {
 
 header h1 {
     font-size: var(--fontSizeSm);
+	
 }
 
 header h2 {
@@ -312,25 +318,30 @@ main {
 	margin: .1rem auto;
 	font-size: var(--gutterMd);
 	line-height: 1.2rem;
+	/* text-shadow: 1px 1px 2px #282626; */
 }
 
 .skl-content h2 {
 	margin-top: .1rem;
 	font-size: var(--gutterLg);
-	text-align: center;
+	text-align: left;
 }
 .skl-content h3 {
-	margin: .1rem .1rem;
-	font-size: var(--fontSizeLg);
+	margin: .3rem .1rem;
+	font-size: var(--fontSizeSm);
 	text-align: left;
-	padding: .1rem .4rem;
+	padding: 0 .4rem;
+	text-shadow: 1px 1px 2px #282626;
+	line-height: normal;
 }
 
 .skl-content p {
-	margin: .1rem .1rem;
+	margin: 0 .1rem;
 	font-size: var(--gutterMd);
-	padding: .4rem;
-	color: wheat;
+	padding: .1rem .4rem;
+	color: #f2f2f2;
+	line-height: 1.2rem;
+	text-shadow: 1px 1px 2px #282626;
 
 }
 /* SKILL STYLE ENDS HERE  */
@@ -383,6 +394,8 @@ main {
 	grid-template-rows: auto;
 	grid-gap: 15px;
 	place-items: center;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
 }
 
 .container .about-card {
@@ -450,21 +463,14 @@ section {
 
 
 /* SKILL CLASS STARTS HERE  */
-/* Adjustments for Skill Class */
-.skill-class {
+.portfolio-details-class {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
     grid-gap: 15px;
+
 }
 
-/* Adjustments for Form Grid */
-/* .form-grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-} */
-
-.skill-class {
+.portfolio-details-class {
     display:grid;
     grid-template-columns: 1fr;
     grid-gap: 15px;
@@ -472,16 +478,8 @@ section {
     padding: .1rem;
 }
 
-/* .skill-class-item {
-    border: 1px solid black;
-    padding: 0;
-    font-size: 20px;
-    text-align: center;
-	margin: auto;
-} */
 
-
-.skill-class img {
+.portfolio-details-class img {
     max-width: 100%;
     height: auto;
     margin: 1rem auto;
@@ -546,15 +544,13 @@ figure p {
 .form-grid-container .address-details {
 	margin: 10px;
 	padding: 5px;
-	/* border: 1px solid #ddd; */
-	/* border-radius: 4px; */
-	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+
 }
 .address-details img {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
-	/* border-radius: 10px 10px 0 0; */
+
 }
 
 .address-details h2 {
@@ -576,10 +572,11 @@ figure p {
 .address-details ul li{
     padding: 0;
     margin: 0 1rem;
-	font-size: var(--gutterSm);
+	font-size: var(--gutterMd);
 	list-style-type: none;
 	font-weight: bold;
 	text-align: justify;
+	color: #333;
 }
 
 
@@ -613,7 +610,7 @@ footer p {
 
 
 .button {
-	/* background-color: #1f386e; */
+
 	font-size: var(--gutterSm);
 }
 
@@ -642,12 +639,12 @@ footer p {
 
 /* READ MORE CONTENT STYLE STARTS HERE  */
 .more-content {
-    display: none; /* Initially hide the additional content */
+    display: none; 
     margin-top: .1rem;
 }
 
 .read-more {
-    background-color: #a73310; /* Bootstrap primary color */
+    background-color: #a73310; 
     color: white;
     border: none;
     padding: .2rem .3rem;
@@ -660,13 +657,45 @@ footer p {
 }
 
 .read-more:hover {
-    background-color: #e0f127; /* Darker shade on hover */
+    background-color: #e0f127; 
 	color: black;
 }
-/* 
-#readMoreBtn {
+
+
+/* MAP STYLE START HERE  */
+.map-class{
+	display: grid;
+	max-width: 800px;
 	margin: auto;
-} */
+	padding: 30px;
+  }
+  
+  .map-class iframe{
+	display: grid;
+	max-width: 600px;
+	height: 250px;
+	margin: auto;
+	padding: 0;
+	box-shadow: 2px 3px 1px 1px rgba(0, 0, 0, 0.751);
+  }
+  
+  @media (min-width: 760px) {
+	.map-class{
+	  display: grid;
+	  width: 100%;
+	  margin: auto;
+	  padding: 0;
+	  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.751);
+	}
+	.map-class iframe{
+	  display: grid;
+	  width: 100%;
+	  height: inherit;
+	  margin: auto;
+	  padding: 0;
+	  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.751);
+	}
+  }
 
 
 
