@@ -665,7 +665,8 @@ footer p {
   
   /* right arrow when collapsed */
   .toggle-button:after {
-	content: '\2192'; 
+	/* content: '\2192';  */
+	content: '➡️'; 
 	color: white;
 	font-weight: bold;
 	float: right;

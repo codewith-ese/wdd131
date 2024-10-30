@@ -10,7 +10,7 @@
     --color-accent: #c1a728;
     
     --gutter-sm: 0.6rem;
-    --gutter-md: 0.8rem;
+    --gutter-md: 1.1rem;
     --gutter-lg: 1.6rem;
     --gutter-xl: 2rem;
     --gutter-xxl: 7.2rem;
@@ -46,6 +46,7 @@ body {
 h1 {
     font-size: 1.8rem;
     color: var(--color-header);
+
 }
 
 h2 {
@@ -247,7 +248,7 @@ main {
 
 .skl-row {
     margin: auto;
-    background-color: #222;
+    /* background-color: #222; */
 }
 
 .skl-row, ul li {
@@ -371,24 +372,27 @@ main {
 
 .about-details h2 {
 	margin-top: 0;
-	font-size: var(--gutterLg);
+	font-size: var(--font-size-lg);
 	text-align: left;
+    padding: 1rem 0;
+
 }
 .about-details h3 {
 	margin: .5rem 0;
-	font-size: var(--fontSizeMd);
+	font-size: var(--font-size-md);
 	text-align: left;
 }
 
 .about-details p {
 	margin-top: 0;
-	font-size: var(--gutterMd);
+	font-size: var(--font-size-sm);
+    line-height: normal;
 }
 
 .about-details ul li{
     padding: 0;
     margin: 0 1rem;
-	font-size: var(--gutterSm);
+	font-size: var(--font-size-sm);
 	list-style-type: none;
 	font-weight: bold;
 	text-align: justify;
@@ -582,14 +586,14 @@ footer p {
 	background-color: #777;
 	color: white;
 	cursor: pointer;
-	padding: .2rem .8rem;
-	width: 100%;
+	padding: .5rem .8rem;
+	width: 90%;
 	border: none;
 	border-radius: 6px;
 	text-align: left;
 	outline: none;
 	font-size: .8rem;
-	box-shadow: 1px 2px 3px #1f386e;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.396);
 	margin: .2rem .5rem;
   }
   
@@ -600,16 +604,16 @@ footer p {
   
   /* right arrow when collapsed */
   .toggle-button:after {
-	content: '\2192'; 
+    content: '➡️'; 
 	color: white;
 	font-weight: bold;
-	float: right;
+	float: left;
 	margin-left: 5px;
   }
   
   /* down arrow when expanded */
   .toggle-button.active:after {
-	content: '\2193'; 
+    content: '⬇️'; 
   }
   
   /* collapsible content */
@@ -618,7 +622,8 @@ footer p {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
-	background-color: #222;
+	/* background-color: #222; */
+    background-color: #1f386e;
   }
 
 
