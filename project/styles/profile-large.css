@@ -248,7 +248,7 @@
     }
     .skl-content h3 {
         margin: .1rem .1rem;
-        font-size: var(--fontSizeSm);
+        font-size: var(--gutterMd);
         text-align: left;
         line-height: normal;
         padding: .4rem;
