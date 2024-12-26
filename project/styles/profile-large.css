@@ -199,6 +199,7 @@
         margin: .1rem 2rem;
         font-size: var(--fontSizeMd);
         text-align: left;
+        color: #f9f9f9;
     }
     
     .connect-us-content p {
@@ -469,7 +470,18 @@
         max-width: 600px;
         margin: 0 auto;
         text-align: left;   
-    }   
+    } 
+    /* ABOUT PROJECT CLASS STARTS HERE  */
+    .portfolio-details-class {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+        place-items: center;
+        padding: .1rem 1rem;
+        margin: auto;
+
+    }
+    
 }
 
 @media (min-width: 500px) {

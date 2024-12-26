@@ -1,3 +1,4 @@
+
 :root {
     /* Generic */
     --color-primary: #654534;
@@ -6,7 +7,8 @@
     --color-background: #F9F8F5;
     --color-text: #1b1919;
     --color-header: #1f386e;
-    --color-footer: #1f386e;
+    /* --color-footer: #1f386e; */
+    --color-footer: #181717;
     --color-accent: #c1a728;
     
     --gutter-sm: 0.6rem;
@@ -43,15 +45,28 @@ body {
 }
 
 /* Typography */
-h1 {
-    font-size: 1.8rem;
+/* Typography */
+h1, h2, h3 {
+    font-family: var(--font-family-heading);
     color: var(--color-header);
+}
 
+h1 {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height);
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height);
 }
+
+h3 {
+    font-size: var(--font-size-md);
+    line-height: var(--line-height);
+    color: #F9F8F5;
+}
+
 
 /* Hero Section */
 .hero {
@@ -242,8 +257,8 @@ main {
 }
 
 .skl-content {
-    /* background-color: var(--color-header); */
-    background-color: var(--color-primary);
+    background-color: var(--color-header);
+    /* background-color: var(--color-primary); */
     color: #fff;
     display: grid;
     grid-template-columns: 1fr;
@@ -282,13 +297,15 @@ main {
     padding: 0 0.4rem;
     text-shadow: 1px 1px 2px #282626;
     line-height: 1.3rem;
+    color: #F9F8F5;
 }
 
 .skl-content p {
     margin: .1rem 0;
-    font-size: var(--font-size-md);
+    /* font-size: var(--font-size-md); */
     /* text-shadow: 0 1px 1px #0a0a0a; */
     line-height: 1.5rem;
+    background-color: var(--color-header);
 }
 
 
@@ -329,14 +346,17 @@ main {
 	font-size: var(--font-size-lg);
 	text-align: center;
     padding-left: .1rem;
+    color: #F9F8F5;
 }
 
 .portfolio-content p {
 	margin: 0;
 	font-size: var(--font-size-md);
-	padding: auto;
 	color: wheat;
     text-align: left;
+    line-height: var(--line-height);
+    word-spacing: .2rem;
+    letter-spacing: .1rem;
 }
 
 
@@ -536,7 +556,7 @@ figure p {
 
 
 
-footer {
+/* footer {
 	margin-top: 15px;
 	border-top: 8px solid #d2d737ef;
 	box-shadow: 0 0 30px #333;
@@ -554,7 +574,73 @@ footer p {
 	line-height: 1.2rem;
 	font-size: small;
 	color: #f9f8f5;
+} */
+
+
+/* New footer style starts here  */
+
+footer {
+    background-color: var(--color-footer);
+    color: #f9f8f5;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 15px;
+    margin-bottom: -30px;
 }
+
+.footer-container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+}
+
+.social-media a {
+    display: inline-block;
+}
+
+.social-media img {
+    width: 30px; /* Adjust icon size */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content p {
+        font-size: 0.8rem; /* Smaller text on mobile */
+    }
+
+    .social-media img {
+        width: 25px; /* Smaller icons on mobile */
+    }
+}
+
+
 
 .highlight {
 	color: #ddd;
@@ -633,8 +719,7 @@ footer p {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
-	/* background-color: #222; */
-    background-color: var(--color-primary);
+    background-color: var(--color-header);
   }
 
 

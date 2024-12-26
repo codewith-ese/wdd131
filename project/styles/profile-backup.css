@@ -1,0 +1,132 @@
+:root {
+    /* Generic */
+    --color-primary: #654534;
+    --color-background: #F9F8F5;
+    --color-text: #1b1919;
+    --color-header: #1f386e;
+    --color-footer: #1f386e;
+    --color-accent: #c1a728;
+
+    --font-family-body: 'Roboto', Arial, sans-serif; /* Fallback font */
+    --font-family-heading: 'Arbutus Slab', serif; /* Fallback font */
+    --font-size-sm: 1rem;
+    --font-size-md: 1.2rem;
+    --font-size-lg: 1.5rem;
+    --font-size-xl: 2rem;
+
+    --line-height: 1.6;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-body);
+}
+
+/* Body Styles */
+body {
+    color: var(--color-text);
+    background-color: var(--color-background);
+    margin: 0 auto;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: var(--font-family-heading);
+    color: var(--color-header);
+}
+
+h1 {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height);
+}
+
+h2 {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height);
+}
+
+h3 {
+    font-size: var(--font-size-md);
+    line-height: var(--line-height);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Welcome Class */
+.welcome-class {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to 1 column */
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: .1rem .5rem;
+    width: 300px;
+    max-width: 90%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 20px 20px 30px rgba(2, 2, 1, 0.591);
+    color: white;
+}
+
+.welcome-class h1 {
+    font-size: var(--font-size-lg);
+    line-height: normal;
+}
+
+.welcome-class p {
+    text-align: left;
+    font-size: var(--font-size-sm);
+}
+
+/* Header and Navigation */
+header {
+    background-color: rgba(227, 232, 230, 0.9);
+    display: grid;
+    grid-gap: .1rem;
+    padding: 1rem 2rem;
+    border-bottom: 3px solid var(--color-header);
+    box-shadow: 1px 2px 5px black;
+}
+
+nav a {
+    display: block;
+    color: #072719;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: var(--font-size-md);
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: #eee;
+    color: #000;
+}
+
+/* Main Content */
+main {
+    align-items: center;
+    background-color: #fff;
+    padding: 0;
+    color: var(--color-header);
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    margin-top: 15px;
+    border-top: 10px;
+}
